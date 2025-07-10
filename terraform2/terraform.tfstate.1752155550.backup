@@ -1,0 +1,31 @@
+{
+  "version": 4,
+  "terraform_version": "1.8.4",
+  "serial": 118,
+  "lineage": "3b0b8f2b-8108-e6e5-2989-e300bd5e51e4",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "yandex_iam_service_account",
+      "name": "sa",
+      "provider": "provider[\"registry.terraform.io/yandex-cloud/yandex\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "created_at": "2025-07-10T13:11:00Z",
+            "description": "",
+            "folder_id": "b1g8bp1nfdm701n4tb5g",
+            "id": "ajeigs3vthmgrcui3u32",
+            "name": "lamp-serviceuser",
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo2MDAwMDAwMDAwMCwiZGVsZXRlIjo2MDAwMDAwMDAwMCwidXBkYXRlIjo2MDAwMDAwMDAwMH19"
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

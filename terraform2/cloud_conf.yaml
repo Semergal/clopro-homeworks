@@ -1,0 +1,20 @@
+#cloud-config
+
+users:
+  - name: root
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
+    ssh-authorized-keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIL089Y5GGOpFLjqBNjSOe0D1Hiuti6VD5ObRVeiGFg9 root@net1
+    packages:
+      - nginx
+write_files:
+  - path: /var/www/html/index.html
+    content: |
+      <html>
+      <head><title>Welcome to LAMP</title></head>
+      <body>
+         <h1>Welcome to LAMP</h1>
+         <img src="https://storage.yandexcloud.net/rtes/photo_1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=YCAJE8zMIf_Q_uHnRX0dyGm_e%2F20250710%2Fru-central1%2Fs3%2Faws4_request&X-Amz-Date=20250710T070619Z&X-Amz-Expires=172800&X-Amz-Signature=08bf8c1315fab71b95191d0787e6709cf97c48d9a58c623c161f127710c79407&X-Amz-SignedHeaders=host" />
+      </body>
+      </html>
